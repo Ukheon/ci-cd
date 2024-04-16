@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
     const [count, setCount] = useState(0);
 
-    console.log("ci cd 테스트 실패시 업로드 안되게2");
+    console.log("s3 정책");
     return (
         <>
             <div>
