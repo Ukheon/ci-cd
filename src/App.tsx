@@ -6,9 +6,9 @@ import "./App.css";
 function App() {
     const [count, setCount] = useState(0);
 
+    console.log("ci cd 테스트 실패시 업로드 안되게");
     return (
         <>
-            testtest2
             <div>
                 <a href="https://vitejs.dev" target="_blank">
                     <img src={viteLogo} className="logo" alt="Vite logo" />
