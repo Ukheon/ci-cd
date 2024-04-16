@@ -1,0 +1,5 @@
+s3 정책 설정이안됨
+"s3:PutObject",
+"s3:GetObject",
+"s3:DeleteObject"
+오류가 발생
