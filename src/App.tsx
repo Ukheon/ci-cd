@@ -6,11 +6,8 @@ import "./App.css";
 function App() {
     const [count, setCount] = useState(0);
 
-    console.log("s3 정책");
     return (
         <>
-            <input type="checkbox" checked={true}></input>
-            <input type="checkbox"></input>
             <div>
                 <a href="https://vitejs.dev" target="_blank">
                     <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -23,7 +20,7 @@ function App() {
                     />
                 </a>
             </div>
-            <h1>Vite + React1</h1>
+            <h1>테스트가 실패한다면</h1>
             <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>
                     count is {count}
