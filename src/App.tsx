@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { ButtonHTMLAttributes, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+    variants: "test" | "test2" | "test3";
+}
 
 function App() {
     const [count, setCount] = useState(0);
@@ -9,6 +13,8 @@ function App() {
     console.log("s3 정책");
     return (
         <>
+            <input type="checkbox" checked={true}></input>
+            <input type="checkbox"></input>
             <div>
                 <a href="https://vitejs.dev" target="_blank">
                     <img src={viteLogo} className="logo" alt="Vite logo" />
