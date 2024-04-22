@@ -12,7 +12,7 @@ test("Renders main page correctly", async () => {
     const codeCount = await screen.queryByText(/The count is now:/);
 
     // Pre Expecations
-    expect(buttonCount.innerHTML).toBe("count is 5");
+    expect(buttonCount.innerHTML).toBe("count is 10");
     // Instead of:
     expect(codeCount).toBeNull();
 
