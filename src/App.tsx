@@ -1,11 +1,7 @@
-import { ButtonHTMLAttributes, useState } from "react";
+import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-
-interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-    variants: "test" | "test2" | "test3";
-}
 
 function App() {
     const [count, setCount] = useState(0);
