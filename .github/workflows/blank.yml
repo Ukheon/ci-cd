@@ -30,16 +30,16 @@ jobs:
               if: failure()
               run: echo "테스트가 실패했습니다."
 
-    cicd:
+    deploy:
         # 작업을 실행해 줄 서버
         runs-on: ubuntu-latest
 
-        # 특정 작업이 종료된 후 작업진행
+        # 특정 작업이 성공한다면 작업진행
         needs: test
 
         # 작업 내에서 실행될 단계들을 정의, 각 단계는 순차적으로 진행
         steps:
-            # 해당 스텝의 이름과 과정
+            # 해당 스텝의 코멘트
             - name: "checkout branch"
 
               # 사용할 작업(action)을 지정합니다.
@@ -52,6 +52,7 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: "20.5"
+
             - name: "run build"
               # 쉘 명령 또는 스크립트를 실행
               run: npm run build
